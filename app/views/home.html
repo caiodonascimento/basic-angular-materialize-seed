@@ -1,0 +1,27 @@
+<div id="container">
+  <nav>
+    <div class="nav-wrapper">
+      <a ui-sref="home.dashboard" class="brand-logo">
+        <i class="material-icons">cloud</i>
+        A-DOC
+      </a>
+      <a class="button-collapse" data-activates="mobile-demo" data-sidenav="left" data-menuwidth="200" data-closeonclick="true">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a ui-sref="home.dashboard">Inicio</a></li>
+        <li><a ui-sref="home.dashboard">Usuarios</a></li>
+        <li><a ui-sref="home.dashboard">Perfiles</a></li>
+        <li><a ui-sref="home.dashboard">Sucursales</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a ui-sref="home.dashboard">Inicio</a></li>
+        <li><a ui-sref="home.dashboard">Usuarios</a></li>
+        <li><a ui-sref="home.dashboard">Perfiles</a></li>
+        <li><a ui-sref="home.dashboard">Sucursales</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content" ui-view>
+  </div>
+</div>

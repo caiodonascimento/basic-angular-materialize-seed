@@ -1,0 +1,41 @@
+<div id="login-page" class="row">
+  <div class="col s12 z-depth-3 card-panel">
+    <form class="login-form">
+      <div class="row">
+        <div class="input-field col s12 center">
+          <p class="center login-form-text">Bienvenido a <strong>A-DOC</strong></p>
+        </div>
+      </div>
+      <div class="row margin">
+        <div class="input-field col s12">
+          <i class="prefix material-icons">perm_identity</i>
+          <input id="username" type="text">
+          <label for="username">Email / Usuario</label>
+        </div>
+      </div>
+      <div class="row margin">
+        <div class="input-field col s12">
+          <i class="prefix material-icons">lock_outline</i>
+          <input id="password" type="password">
+          <label for="password">Contraseña</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m12 l12 login-text">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Recordarme</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <a ui-sref="home.dashboard" class="btn waves-effect waves-light col s12">Ingresar</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m12 l12">
+            <p class="margin right-align medium-small"><a ui-sref="reset-pass">Olvidaste tu contraseña ?</a></p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
