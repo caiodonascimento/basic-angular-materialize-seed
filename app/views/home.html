@@ -13,6 +13,7 @@
         <li><a ui-sref="home.dashboard">Usuarios</a></li>
         <li><a ui-sref="home.dashboard">Perfiles</a></li>
         <li><a ui-sref="home.dashboard">Sucursales</a></li>
+        <li><a ui-sref="login">Salir</a></li>
       </ul>
       <!--<ul class="side-nav" id="slide-out">
         <li><a ui-sref="home.dashboard"><i class="left material-icons">dashboard</i>Inicio</a></li>
@@ -20,22 +21,28 @@
         <li><a ui-sref="home.dashboard"><i class="left material-icons">lock_outline</i>Perfiles</a></li>
         <li><a ui-sref="home.dashboard"><i class="left material-icons">store</i>Sucursales</a></li>
       </ul>-->
-      <ul id="slide-out" class="side-nav">
+      <ul id="slide-out" class="side-nav collection">
         <li><div class="userView">
           <img class="background" src="images/office.jpg">
           <a href="#!user"><img class="circle" src="images/conference.svg"></a>
           <a href="#!name"><span class="white-text name">Alan Brito</span></a>
           <a href="#!email"><span class="white-text email">alan.brito@gmail.com</span></a>
         </div></li>
-        <li><a ui-sref="home.dashboard"><i class="material-icons">dashboard</i>Inicio</a></li>
-        <li><a ui-sref="home.dashboard">Usuarios</a></li>
-        <li><a ui-sref="home.dashboard">Perfiles</a></li>
-        <li><a ui-sref="home.dashboard">Sucursales</a></li>
-        <li><div class="divider"></div></li>
-        <li><a ui-sref="login"><i class="material-icons">lock_open</i>Salir</a></li>
+        <li class="collection-item" ng-repeat="menuItem in listMenuItems | orderBy:'id'">
+          <a ui-sref="{{menuItem.url}}">
+            <i class="material-icons">{{menuItem.icon}}</i>
+            {{menuItem.name}}
+          </a>
+        </li>
+        <li class="collection-item">
+          <a ui-sref="login">
+            <i class="material-icons">lock_open</i>
+            Salir
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
-  <div class="content" ui-view>
+  <div class="container" ui-view>
   </div>
 </div>

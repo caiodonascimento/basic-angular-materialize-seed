@@ -1,4 +1,4 @@
-var app = angular.module('angular', ['ui.router','ui.materialize']);
+var app = angular.module('angular', ['ui.router','ui.materialize','angular.morris']);
 app.config(function ($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('home', {
