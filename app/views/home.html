@@ -5,7 +5,7 @@
         <i class="material-icons">cloud</i>
         A-DOC
       </a>
-      <a class="button-collapse" data-activates="mobile-demo" data-sidenav="left" data-menuwidth="200" data-closeonclick="true">
+      <a class="button-collapse" data-activates="slide-out" data-sidenav="left" data-closeonclick="true">
         <i class="material-icons">menu</i>
       </a>
       <ul class="right hide-on-med-and-down">
@@ -14,11 +14,25 @@
         <li><a ui-sref="home.dashboard">Perfiles</a></li>
         <li><a ui-sref="home.dashboard">Sucursales</a></li>
       </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a ui-sref="home.dashboard">Inicio</a></li>
+      <!--<ul class="side-nav" id="slide-out">
+        <li><a ui-sref="home.dashboard"><i class="left material-icons">dashboard</i>Inicio</a></li>
+        <li><a ui-sref="home.dashboard"><i class="left material-icons">supervisor_account</i>Usuarios</a></li>
+        <li><a ui-sref="home.dashboard"><i class="left material-icons">lock_outline</i>Perfiles</a></li>
+        <li><a ui-sref="home.dashboard"><i class="left material-icons">store</i>Sucursales</a></li>
+      </ul>-->
+      <ul id="slide-out" class="side-nav">
+        <li><div class="userView">
+          <img class="background" src="images/office.jpg">
+          <a href="#!user"><img class="circle" src="images/conference.svg"></a>
+          <a href="#!name"><span class="white-text name">Alan Brito</span></a>
+          <a href="#!email"><span class="white-text email">alan.brito@gmail.com</span></a>
+        </div></li>
+        <li><a ui-sref="home.dashboard"><i class="material-icons">dashboard</i>Inicio</a></li>
         <li><a ui-sref="home.dashboard">Usuarios</a></li>
         <li><a ui-sref="home.dashboard">Perfiles</a></li>
         <li><a ui-sref="home.dashboard">Sucursales</a></li>
+        <li><div class="divider"></div></li>
+        <li><a ui-sref="login"><i class="material-icons">lock_open</i>Salir</a></li>
       </ul>
     </div>
   </nav>
