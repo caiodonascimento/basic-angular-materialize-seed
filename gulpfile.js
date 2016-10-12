@@ -86,7 +86,13 @@ gulp.task('browserSync', function () {
 // Copy font files to dist directly
 gulp.task('fonts', function () {
 	gulp.src(paths.fonts, { cwd: bases.app })
-		.pipe(gulp.dest(bases.dist + '/css/fonts/'));
+		.pipe(gulp.dest(bases.dist + '/fonts/'));
+});
+
+// Copy font files to dist directly
+gulp.task('images', function () {
+	gulp.src(paths.fonts, { cwd: bases.app })
+		.pipe(gulp.dest(bases.dist + '/fonts/'));
 });
 
 //deploy dist folder to gh-pages for github
